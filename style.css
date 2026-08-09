@@ -1,0 +1,14 @@
+body { font-family: Arial; padding: 15px; background: #f5f5f5; margin:0; }
+h2 { color: #2e7d32; text-align: center; margin:5px 0 15px 0; }
+.logo { text-align: center; font-size: 18px; font-weight: bold; color: #2e7d32; margin-bottom: 10px;}
+.form { background: white; padding: 15px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+input, button { padding: 10px; margin: 5px 0; border-radius: 5px; border: 1px solid #ccc; width: 100%; box-sizing: border-box; }
+button { background: #2e7d32; color: white; border: none; cursor: pointer; font-weight: bold; }
+button:hover { background: #1b5e20; }
+.del-btn { background: #d32f2f; padding:5px 10px; width:auto; }
+.table-wrapper { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; }
+th { background: #2e7d32; color: white; padding: 10px; font-size:14px; }
+td { padding: 10px; border-bottom: 1px solid #ddd; text-align: center; font-size:14px; }
+.total-box { background: #e8f5e9; padding: 15px; border-radius: 10px; margin: 20px 0; font-weight: bold; font-size: 18px; border-left: 5px solid #2e7d32; }
+#installBtn { display: none; position: fixed; bottom: 20px; right: 20px; background: #2e7d32; color: white; padding: 12px 20px; border-radius: 50px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border:none; z-index:999; }
