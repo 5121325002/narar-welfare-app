@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Narar Humanity Welfare Committee</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2e7d32">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-512.png">
+</head>
+<body>
+  <div class="logo">🤝 Narar Humanity Welfare Committee</div>
+  <h2>Donation Register</h2>
+  <button id="installBtn">Install App</button>
+
+  <div class="form">
+    <h3>Add New Donation</h3>
+    <input type="text" id="name" placeholder="Person Name" required>
+    <input type="date" id="date" required>
+    <input type="number" id="amount" placeholder="Donation Amount Rs" required>
+    <input type="text" id="village" placeholder="Village">
+    <button onclick="addDonation()">Add Donation</button>
+  </div>
+
+  <div class="total-box" id="monthlyTotal">Monthly Total: Rs 0</div>
+
+  <div class="table-wrapper">
+    <table>
+      <thead><tr><th>Name</th><th>Date</th><th>Amount Rs</th><th>Village</th><th>Action</th></tr></thead>
+      <tbody id="donationTable"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
